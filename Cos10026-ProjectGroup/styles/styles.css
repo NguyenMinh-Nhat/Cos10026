@@ -142,7 +142,7 @@ button {
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        width: 100%;
+        width: 300px;
 }
 button:hover {
      background-color: darkblue;
@@ -158,8 +158,9 @@ form h2 {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
     margin: 0;
-    width: 100%;
+    width: 800px;
     padding: 0;
+    margin-left: 450px;
 }
 .h2 {
 margin: auto;
@@ -169,7 +170,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
     margin: auto;
 }
     input, select, textarea {
@@ -197,4 +198,3 @@ button:hover {
 }
 
 /* -------------- end of apply --------------*/
-----
