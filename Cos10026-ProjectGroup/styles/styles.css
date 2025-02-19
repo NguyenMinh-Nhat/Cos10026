@@ -1,6 +1,6 @@
 /* -------- this is index.html menu ------*/
 
-footer {
+#footer_index{
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -39,6 +39,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    font-size: large;
+    
 }
 
 main {
@@ -105,6 +107,7 @@ main {
 
 .menu_container li {
     font-weight: bold;
+    font-size: 20px;
 }
 
 
@@ -120,14 +123,7 @@ main {
 
 
 /*-------------apply.html    -------------*/
-form {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: auto;
-}
+
 input, select, textarea {
         width: 100%;
         padding: 8px;
@@ -157,10 +153,10 @@ form h2 {
 .apply_body {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
-    margin: 0;
-    width: 800px;
-    padding: 0;
-    margin-left: 450px;
+    margin: 0 auto;
+    width: 700px;
+    padding: 20px;
+
 }
 .h2 {
 margin: auto;
@@ -172,9 +168,10 @@ form {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: auto;
+
 }
     input, select, textarea {
-        width: 100%;
+        width: 70%;
         padding: 8px;
         margin: 5px 0;
         border: 1px solid #ccc;
@@ -196,5 +193,6 @@ button:hover {
 .Registerid {
     text-align: center;
 }
+
 
 /* -------------- end of apply --------------*/
