@@ -1,4 +1,12 @@
+/* -------- this is index.html menu ------*/
 
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-top: 4px double #3498db;
+}
 
 header {
     background-color: white;
@@ -37,13 +45,6 @@ main {
     padding: 20px;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-top: 4px double #3498db;
-}
 
 
 .vngimage {
@@ -65,81 +66,8 @@ footer {
 
 
 
-.h2 {
+.h2index {
     margin: auto;
-}
-form {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: auto;
-}
-input, select, textarea {
-        width: 100%;
-        padding: 8px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-}
-button {
-        background-color: rgb(239, 227, 7);
-        color: white;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        width: 100%;
-}
-button:hover {
-     background-color: darkblue;
-}
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fefdfd;
-    margin: 0;
-    width: 100%;
-    padding: 0;
-}
-.h2 {
-margin: auto;
-}
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    margin: auto;
-}
-input, select, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background-color: rgb(239, 227, 7);
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-button:hover {
- background-color: darkblue;
-}
-
-.Registerid {
-    text-align: center;
 }
 
 .image_banner {
@@ -178,3 +106,94 @@ button:hover {
 .menu_container li {
     font-weight: bold;
 }
+
+
+/*----- end of index  ---------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------apply.html    -------------*/
+form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: auto;
+}
+input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+button {
+        background-color: rgb(239, 227, 7);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+}
+button:hover {
+     background-color: darkblue;
+}
+
+
+form h2 {
+    text-align: center;
+}
+
+
+.apply_body {
+    font-family: Arial, sans-serif;
+    background-color: #fefdfd;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.h2 {
+margin: auto;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+}
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+button {
+    background-color: rgb(239, 227, 7);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+ background-color: darkblue;
+}
+
+.Registerid {
+    text-align: center;
+}
+
+/* -------------- end of apply --------------*/
