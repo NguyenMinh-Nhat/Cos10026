@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+    <header>
+        <link href = "styles/styles.css" rel = "stylesheet">
+    </header>
+</head>
+<body class = "apply_body">
+    
+
+    <form action="submit_form.php" method="POST">
+        <h2>Registration Form</h2>
+        <label for="name">First Name:</label>
+        <input type="text" id="FirstName" name="FirstName" maxlength="20" required>
+        
+        <label for="name">Last Name:</label>
+        <input type="text" id="Lastname" name="Lastname" maxlength="20" required>
+
+        <label for="Date of birth">Date of birth</label>
+          <div class="Date of birth" >
+             <input type="date">
+         </div>
+
+        <label for="Suburb">Surburb</label>
+        <input type="Surburb" id="Surburb" name="Surburb" required>
+
+        <label for="State">State</label>
+        <input type="State" id="State" name="State" required>
+
+        <label for="Postcode">Postcode</label>
+        <input type="Postcode" id="Postcode" name="Postcode" required>
+
+        <label for="Email">Email Address:</label>   
+        <input type="Email" id="Email" name="Email" required> 
+
+        <label for="Phone number">Phone number</label>
+        <input type="Phone number" id="Phone number" name="Phone number" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <label for="Skill list">Skill list</label>
+        <input type="Skill list" id="Skill list" name="Skill list" required>
+        
+        <label for="Other skill">Other skill</label>
+        <input type="Other skill" id="Other skill" name="Other skill" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        
+        <button type="submit">Submit</button>
+    
+    </form>
+     
+</body>
+</html>
+   

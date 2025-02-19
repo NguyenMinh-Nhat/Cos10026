@@ -1,42 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: white;
-    color: #f7d464;
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-}
-
-nav {
-    text-align: center;
-    background-color: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 5px;
-    padding: 10px;
-}
-
-nav ul li {
-    display: inline;
-    padding: 10px 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
+/* -------- this is index.html menu ------*/
 
 footer {
     background-color: #333;
@@ -46,16 +8,54 @@ footer {
     border-top: 4px double #3498db;
 }
 
-
-.image {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between the image and text */
+header {
+    background-color: white;
+    color: #f7d464;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    height: 70px;
 }
 
-.logo {
-    flex: 1; /* Ensures text takes up remaining space */
+nav {
     text-align: center;
+    background-color: #333;
+    height: 50px;
+}
+
+ul {
+    list-style-type: none;
+    display:inline-block;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 15px 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+
+.vngimage {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Maintain aspect ratio */
+}
+
+#logo_text {
+    text-align: center;
+    margin: auto;
+    width: 100;
 }
 
 .container {
@@ -63,3 +63,138 @@ footer {
     align-items: center;
 
 }
+
+
+
+.h2index {
+    margin: auto;
+}
+
+.image_banner {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    display:block;
+    width:100%;
+    border-radius:none;
+    
+}
+
+.image_container {
+    position:relative;
+    display:inline-block;
+}
+
+.text_box {
+    position: absolute;
+    top: 40%; /* Điều chỉnh vị trí theo nhu cầu của bạn */
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(226, 215, 215, 0.5); /* Nền bán trong suốt */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.text_box a {
+    color: rgb(250, 133, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.menu_container li {
+    font-weight: bold;
+}
+
+
+/*----- end of index  ---------------*/
+
+
+
+
+
+
+
+
+
+
+/*-------------apply.html    -------------*/
+form {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: auto;
+}
+input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+}
+button {
+        background-color: rgb(239, 227, 7);
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 300px;
+}
+button:hover {
+     background-color: darkblue;
+}
+
+
+form h2 {
+    text-align: center;
+}
+
+
+.apply_body {
+    font-family: Arial, sans-serif;
+    background-color: #fefdfd;
+    margin: 0;
+    width: 800px;
+    padding: 0;
+    margin-left: 450px;
+}
+.h2 {
+margin: auto;
+}
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+}
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+button {
+    background-color: rgb(239, 227, 7);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+ background-color: darkblue;
+}
+
+.Registerid {
+    text-align: center;
+}
+
+/* -------------- end of apply --------------*/
