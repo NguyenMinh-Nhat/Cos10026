@@ -4,35 +4,52 @@
     <meta name="viewport" content ="width=device-width,initial-scale=1.0">
     <header>
         <link href = "styles/styles.css" rel = "stylesheet">
-        <title>Career</title>
     </header>
 </head>
 <body>
     <header class = "container">
-        <h1 class = "logo">VNG Games </h1>
-        <img src = "images/vng.jpg" class = "image"/>
+        <div id="logo_text">
+        <h1 id = "logo">VNG Games </h1> 
+    </div>
+        <img src = "images/vng.jpg" class = "image" alt = "VNG Games Logo"/>
     </header>
+    
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="job.html">Career</a></li>
             <li><a href="apply.html">Apply</a></li>
-            <li><a href="mailto:105680164@student.swin.edu.au">Contact Us</a>
+
             
         </ul>
     </nav>
-    <h2 class = "Registerid">Registration Form</h2>
-
-    <form action="submit_form.php" action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+    
+    <h2>Registration Form</h2>
+    <form action="submit_form.php" method="POST">
         <label for="name">First Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="FirstName" name="FirstName" maxlength="20" pattern="[A-Za-z]{1,20}" title="Only letters, max 20 characters" required>
         
         <label for="name">Last Name:</label>
         <input type="text" id="name" name="name" required>
+        
+        <label for="Date of birth">Date of birth</label>
+        <input type="text" id="Date of birth" name="Date of birth" required>
+        
+        <label for="Suburb">Surburb</label>
+        <input type="Surburb" id="Surburb" name="Surburb" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="State">State</label>
+        <input type="State" id="State" name="State" required>
+
+        <label for="Postcode">Postcode</label>
+        <input type="Postcode" id="Postcode" name="Postcode" required>
+
+        <label for="Email">Email Address:</label>   
+        <input type="Email" id="Email" name="Email" required>
+
+        <label for="Phone number">Phone number</label>
+        <input type="Phone number" id="Phone number" name="Phone number" required>
 
         <label for="gender">Gender:</label>
         <select id="gender" name="gender">
@@ -40,6 +57,12 @@
             <option value="female">Female</option>
             <option value="other">Other</option>
         </select>
+        
+        <label for="Skill list">Skill list</label>
+        <input type="Skill list" id="Skill list" name="Skill list" required>
+        
+        <label for="Other skill">Other skill</label>
+        <input type="Other skill" id="Other skill" name="Other skill" required>
 
         <label for="message">Your Message:</label>
         <textarea id="message" name="message" rows="4"></textarea>
@@ -49,6 +72,6 @@
     <footer>
         <p>&copy; 2025 My Homepage. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
+   

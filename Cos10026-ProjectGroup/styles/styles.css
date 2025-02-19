@@ -1,9 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+
 
 header {
     background-color: white;
@@ -11,27 +6,31 @@ header {
     text-align: center;
     padding: 10px;
     margin: 5px;
+    height: 70px;
 }
 
 nav {
     text-align: center;
     background-color: #333;
+    height: 50px;
 }
 
-nav ul {
+ul {
     list-style-type: none;
-    margin: 5px;
-    padding: 10px;
+    display:inline-block;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    padding: 10px 20px;
+    padding: 15px 30px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
 }
 
 main {
@@ -47,17 +46,15 @@ footer {
 }
 
 
-.image {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between the image and text */
-    
+.vngimage {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Maintain aspect ratio */
 }
 
 #logo_text {
     text-align: center;
     margin: auto;
-    width: 100%;
+    width: 100;
 }
 
 .container {
@@ -100,16 +97,15 @@ button:hover {
 }
 
 
-<!--  apply   -->
+
 
 
 body {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
-    text-align: center;
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    margin: 0;
+    width: 100%;
+    padding: 0;
 }
 .h2 {
 margin: auto;
@@ -144,4 +140,41 @@ button:hover {
 
 .Registerid {
     text-align: center;
+}
+
+.image_banner {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    display:block;
+    width:100%;
+    border-radius:none;
+    
+}
+
+.image_container {
+    position:relative;
+    display:inline-block;
+}
+
+.text_box {
+    position: absolute;
+    top: 40%; /* Điều chỉnh vị trí theo nhu cầu của bạn */
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(226, 215, 215, 0.5); /* Nền bán trong suốt */
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.text_box a {
+    color: rgb(250, 133, 0);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.menu_container li {
+    font-weight: bold;
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhancements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Enhancements</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. CSS Animation for Interactive Elements</h2>
+            <p><strong>How it extends basic requirements:</strong> Adds smooth hover animations to buttons, enhancing user interaction.</p>
+            <p><strong>Code used:</strong></p>
+            <pre>
+                button:hover {
+                    background-color: #ff6600;
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in-out;
+                }
+            </pre>
+            <p><strong>References:</strong> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition" target="_blank">MDN Web Docs - CSS Transitions</a></p>
+            <p><strong>Implementation:</strong> <a href="index.html#enhanced-button" target="_blank">View on Index Page</a></p>
+        </section>
+
+        <section>
+            <h2>2. Responsive Design for Mobile</h2>
+            <p><strong>How it extends basic requirements:</strong> Implements a flexible grid layout that adapts to different screen sizes.</p>
+            <p><strong>Code used:</strong></p>
+            <pre>
+                @media screen and (max-width: 768px) {
+                    .container {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            </pre>
+            <p><strong>References:</strong> <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/" target="_blank">CSS Tricks - Media Queries</a></p>
+            <p><strong>Implementation:</strong> <a href="about.html#responsive-layout" target="_blank">View on About Page</a></p>
+        </section>
+    </main>
+</body>
+</html>
