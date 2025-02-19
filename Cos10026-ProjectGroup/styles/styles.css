@@ -43,9 +43,6 @@ nav ul li a {
     
 }
 
-main {
-    padding: 20px;
-}
 
 
 
@@ -79,7 +76,7 @@ main {
     display:block;
     width:100%;
     border-radius:none;
-    
+    padding-top:20px;
 }
 
 .image_container {
@@ -89,19 +86,20 @@ main {
 
 .text_box {
     position: absolute;
-    top: 40%; /* Điều chỉnh vị trí theo nhu cầu của bạn */
+    top: 35%; 
     left: 20%;
     transform: translate(-50%, -50%);
-    background-color: rgba(226, 215, 215, 0.5); /* Nền bán trong suốt */
+    background-color: rgba(226, 215, 215, 0.5); 
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.text_box a {
+.text_box_1 {
     color: rgb(250, 133, 0);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    padding: 20px;
 }
 
 
@@ -110,6 +108,16 @@ main {
     font-size: 20px;
 }
 
+.icon_arrow {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(252, 151, 0);
+    text-decoration: dashed;
+    color:#fff;
+    background-color: rgb(252, 151, 0);
+    font-size: 15px;
+    border: 2px;
+}
 
 /*----- end of index  ---------------*/
 
