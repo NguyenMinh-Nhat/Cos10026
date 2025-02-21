@@ -6,6 +6,9 @@
     text-align: center;
     padding: 20px;
     border-top: 4px double #3498db;
+    position: static;
+    display:relative;
+    z-index: 1;
 }
 
 header {
@@ -132,13 +135,7 @@ nav ul li a {
 
 /*-------------apply.html    -------------*/
 
-input, select, textarea {
-        width: 100%;
-        padding: 8px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-}
+
 button {
         background-color: rgb(239, 227, 7);
         color: white;
@@ -161,9 +158,11 @@ form h2 {
 .apply_body {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
-    margin: 0 auto;
     width: 700px;
     padding: 20px;
+    display: table;
+    margin: auto;
+    top: 250px;
 
 }
 .h2 {
@@ -175,15 +174,14 @@ form {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin: auto;
+    position:relative;
+    clear:both;
 
 }
-    input, select, textarea {
-        width: 70%;
-        padding: 8px;
+    input, select {
         margin: 5px 0;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 7px;
     }
 button {
     background-color: rgb(239, 227, 7);
@@ -202,5 +200,84 @@ button:hover {
     text-align: center;
 }
 
+.Date.of.birth input[type="date"] {
+    width: 150px;
+    padding: 8px;
+    position:flex;
+    display: inline;
+}
 
+input[type="text"], input[type="email"], input[type="password"], input[type="surburb"], input[type="postcode"],input[type="state"] {
+    width: 500px;
+    padding:10px;
+}
+
+input[type="Phone number"] {
+    width: 300px;
+    padding: 10px;
+    height: 20px;
+}
+
+select[type="gender"] {
+    width: 150px;
+    padding: 10px;
+}
+
+input[type="Skill list"] {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+#usermessage-label {
+    text-align: center;
+    margin: auto;
+    max-height: fit-content;
+    
+}
+
+textarea#usermessage-button {
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.Message-div {
+    padding: 10px;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="Other skill"] {
+    width: 400px;
+    height: 50px;
+}
+
+#dov-div {
+    display:flex;
+    position: relative;
+
+}
+
+.vngbg {
+    background-color: #f7d464;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    clear:both;
+    
+}
+
+#footer_apply{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    clear: both;
+    margin-top: 25%;
+    width: 100%;
+}
 /* -------------- end of apply --------------*/

@@ -7,6 +7,7 @@
 
 <body >
     
+    
     <header class = "container">
         <div id="logo_text">
         <h1 id = "logo">VNG Games </h1> 
@@ -22,7 +23,7 @@
             
         </ul>
     </nav>
-    
+    <img src ="styles/images/vngbg.jpg" class = "vngbg" alt = "VNG Games Background"/>
     <form action="submit_form.php" method="POST" class = "apply_body">
         <h2>Registration Form</h2>
         <div>
@@ -33,14 +34,14 @@
         <label for="name">Last Name:</label>
             <input type="text" id="Lastname" name="Lastname" maxlength="20" required>
         </div>
-        <div>
-        <label for="Date of birth">Date of birth</label>
+        <div id ="dob-div">
+        <label for="Date of birth" >Date of birth</label>
           <div class="Date of birth" >
              <input type="date">
          </div>
         </div>
         <div>
-        <label for="Suburb">Surburb</label>
+        <label for="Surburb">Surburb</label>
             <input type="Surburb" id="Surburb" name="Surburb" required>
         </div>
         <div>
@@ -75,15 +76,15 @@
         <label for="Other skill">Other skill</label>
         <input type="Other skill" id="Other skill" name="Other skill" required>
         </div>
-        <div>
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <div class = "Message-div">
+        <label for="usermessage" id="usermessage-label">Your Message:</label>
+        <textarea  name="usermessage" id ="usermessage-button" rows="4"></textarea>
         </div>
         <div>
         <button type="submit">Submit</button>
         </div>
     </form>
-    <footer id="footer_index">
+    <footer id="footer_apply">
         <p>&copy; 2025 My Homepage. All rights reserved.</p>
     </footer>
 </body>
