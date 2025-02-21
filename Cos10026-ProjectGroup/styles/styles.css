@@ -32,13 +32,36 @@ nav {
     background-color: #333;
     height: 50px;
     max-width: 100%;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+nav a:hover {
+    color: #f4a261;
+    transform: scale(1.1);
+
 }
 
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #f4a261;
+    transition: width 0.3s ease, left 0.3s ease;
+}
 ul {
-    list-style-type: none;
-    display:inline-block;
-    padding: auto;
-    
+    list-style: none;
+    padding-top: 0.5%;
+}
+
+ul li {
+    padding: 5px 0;
+    position: relative;
 }
 
 nav ul li {
@@ -55,7 +78,11 @@ nav ul li a {
     
 }
 
-
+nav ul {
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
 
 
 .vngimage {
@@ -89,11 +116,12 @@ nav ul li a {
 .image_banner {
     max-width: 100%;
     max-height: auto;
-    object-fit: cover;
     display:block;
     width:100%;
     border-radius:none;
     padding-top:20px;
+    position:static;
+    z-index: 10;
 }
 
 .image_container {
@@ -177,21 +205,20 @@ form h2 {
     display: table;
     margin: auto;
     top: 250px;
-    color: rgb(rgb(182, 178, 178), rgb(101, 104, 101), rgb(34, 34, 34))
+    color: rgb(rgb(182, 178, 178), rgb(101, 104, 101), rgb(34, 34, 34));
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(124, 123, 123, 0.1);
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    clear:both;
 }
 .h2 {
 margin: auto;
 }
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    position:relative;
-    clear:both;
 
-}
     input, select {
         margin: 5px 0;
         border: 1px solid #ccc;
@@ -277,10 +304,12 @@ input[type="Other skill"] {
     background-color: #f7d464;
     color: #333;
     text-align: center;
+    align-items: center;
     width: 100%;
-    position: absolute;
+    position: static;
     clear:both;
     display:flex;
+    justify-content: center;
     
 }
 
@@ -291,8 +320,8 @@ input[type="Other skill"] {
     padding: 10px;
     position: relative;
     clear: both;
-    margin-top: 25%;
     width: 100%;
+    display:block;
 }
 /* -------------- end of apply --------------*/
 
@@ -303,7 +332,6 @@ input[type="Other skill"] {
 
 /* Timetable Section Styling */
 section#div-timetable-employee {
-    background-color: #ffe2d1;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 40px;
