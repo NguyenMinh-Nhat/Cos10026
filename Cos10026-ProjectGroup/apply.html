@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content ="width=device-width,initial-scale=1.0">
-    <link href = "styles/styles.css" rel = "stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>Apply Position</title>
 </head>
 
-<body >
-    
-    
-    <header class = "container">
+<body>
+    <header class="container">
         <div id="logo_text">
-        <h1 id = "logo">VNG Games </h1> 
+            <h1 id="logo">VNG Games</h1>
         </div>
-        <img src = "styles/images/vng.jpg" class = "vngimage" alt = "VNG Games Logo"/>
+        <img src="styles/images/vng.jpg" class="vngimage" alt="VNG Games Logo">
     </header>
 
-    <nav id = "nav_apply">
+    <nav id="nav_apply">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="job.html">Career</a></li>
             <li><a href="apply.html">Apply</a></li>
-            
         </ul>
     </nav>
-    <img src ="styles/images/vngbg.jpg" class = "vngbg" alt = "VNG Games Background"/>
-    <form action="submit_form.php" method="POST" class = "apply_form">
+
+    <img src="styles/images/vngbg.jpg" class="vngbg" alt="VNG Games Background">
+
+    <form action="submit_form.php" method="POST" class="apply_form">
         <h2>Registration Form</h2>
+
         <div>
-        <label for="name">First Name:</label>
-            <input type="text" placeholder="Nguyen Van A" type="text" id="FirstName" name="FirstName" maxlength="20" required>
+            <label for="FirstName">First Name:</label>
+            <input type="text" placeholder="Nguyen Van A" id="FirstName" name="FirstName" maxlength="20" required>
         </div>
+
         <div>
-        <label for="name">Last Name:</label>
-            <input type="text" placeholder="Nhập họ của bạn" type="text" id="Lastname" name="Lastname" maxlength="20" required>
+            <label for="LastName">Last Name:</label>
+            <input type="text" placeholder="Nhập họ của bạn" id="LastName" name="LastName" maxlength="20" required>
         </div>
-        <div id ="dob-div">
-        <label for="Date of birth" >Date of birth</label>
-          <div class="Date of birth" >
-             <input type="date">
-         </div>
+
+        <div id="dob-div">
+            <label for="DateOfBirth">Date of Birth:</label>
+            <input type="date" id="DateOfBirth" name="DateOfBirth" required>
         </div>
+
         <div>
-        <label for="Surburb">Surburb</label>
-            <input type="Surburb" id="Surburb" name="Surburb" required type="text" id="Surburb" name="Surburb" maxlength="40" required type="text" placeholder="Quận/Huyện/Xã">
+            <label for="Suburb">Suburb:</label>
+            <input type="text" placeholder="Quận/Huyện/Xã" id="Suburb" name="Suburb" maxlength="40" required>
         </div>
+
         <div>
-        <label for="State">State</label>
-            <input type="State" id="State" name="State" required type="text" id="State" name="State" maxlength="40" required type="text" placeholder="Tỉnh">
-              <select id="State" name="State" required>
-                  <option value="">Select State</option>
-                  <option value="VIC">VIC</option>
-                  <option value="NSW">NSW</option>
-                  <option value="QLD">QLD</option>
-                  <option value="NT">NT</option>
-                  <option value="WA">WA</option>
-                  <option value="SA">SA</option>
-                  <option value="TAS">TAS</option>
-                  <option value="ACT">ACT</option>
-             </select>
+            <label for="State">State:</label>
+            <select id="State" name="State" required>
+                <option value="">Select State</option>
+                <option value="VIC">VIC</option>
+                <option value="NSW">NSW</option>
+                <option value="QLD">QLD</option>
+                <option value="NT">NT</option>
+                <option value="WA">WA</option>
+                <option value="SA">SA</option>
+                <option value="TAS">TAS</option>
+                <option value="ACT">ACT</option>
+            </select>
         </div>
-        </div>
+
         <div>
-        <label for="Postcode">Postcode</label>
-            <input type="Postcode" id="Postcode" name="Postcode" required  type="text" id="Postcode" name="Postcode" pattern="\d{4}" maxlength="4" required title="Postcode must be exactly 4 digits" type="text" placeholder="Mã bưu chính">
+            <label for="Postcode">Postcode:</label>
+            <input type="text" id="Postcode" name="Postcode" pattern="\d{4}" maxlength="4" title="Postcode must be exactly 4 digits" placeholder="Mã bưu chính" required>
         </div>
+
         <div>
-        <label for="Email">Email Address:</label>   
-            <input type="Email" id="Email" name="Email" required type="text" placeholder="Nhập email của bạn">
-            
+            <label for="Email">Email Address:</label>
+            <input type="email" id="Email" name="Email" placeholder="Nhập email của bạn" required>
         </div>
+
         <div>
-        <label for="Phone number">Phone number</label>
-            <input type="Phone number" id="Phone number" name="Phone number" required type="tel" id="PhoneNumber" name="PhoneNumber" pattern="[\d\s]{8,12}" required title="Enter a valid phone number with 8 to 12 digits, spaces allowed." type="text" placeholder="Số điện thoại">
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" id="PhoneNumber" name="PhoneNumber" pattern="[\d\s]{8,12}" title="Enter a valid phone number with 8 to 12 digits, spaces allowed." placeholder="Số điện thoại" required>
         </div>
+
         <div>
-        <label for="gender">Gender:</label>
-        <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-        </select>
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
         </div>
+
         <div>
-        <label for="Skill list">Skill list</label>
-        <input type="Skill list" id="Skill list" name="Skill list" required>
+            <label for="SkillList">Skill List:</label>
+            <input type="text" id="SkillList" name="SkillList" required>
         </div>
+
         <div>
-        <label for="Other skill">Other skill</label>
-        <input type="Other skill" id="Other skill" name="Other skill" required>
+            <label for="OtherSkill">Other Skill:</label>
+            <input type="text" id="OtherSkill" name="OtherSkill" required>
         </div>
-        <div class = "Message-div">
-        <label for="usermessage" id="usermessage-label">Your Message:</label>
-        <textarea  name="usermessage" id ="usermessage-button" rows="4"></textarea>
+
+        <div class="Message-div">
+            <label for="UserMessage">Your Message:</label>
+            <textarea name="UserMessage" id="UserMessage" rows="4"></textarea>
         </div>
+
         <div>
-        <button type="submit">Submit</button>
+            <button type="submit">Submit</button>
         </div>
     </form>
+
     <footer id="footer_apply">
         <p>&copy; 2025 My Homepage. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
-   
