@@ -1,4 +1,11 @@
 /* -------- this is index.html menu ------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255)
+    
+}
 
 #footer_index{
     background-color: #333;
@@ -24,17 +31,19 @@ nav {
     text-align: center;
     background-color: #333;
     height: 50px;
+    max-width: 100%;
 }
 
 ul {
     list-style-type: none;
     display:inline-block;
-    padding: 0;
+    padding: auto;
+    
 }
 
 nav ul li {
     display: inline;
-    padding: 15px 30px;
+    margin:0 20px;
 }
 
 nav ul li a {
@@ -50,8 +59,8 @@ nav ul li a {
 
 
 .vngimage {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Maintain aspect ratio */
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #logo_text {
@@ -61,9 +70,14 @@ nav ul li a {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:flex;
+    text-align: center;
 }
 
 
@@ -155,7 +169,7 @@ form h2 {
 }
 
 
-.apply_body {
+.apply_form {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
     width: 700px;
@@ -163,7 +177,7 @@ form h2 {
     display: table;
     margin: auto;
     top: 250px;
-
+    color: rgb(rgb(182, 178, 178), rgb(101, 104, 101), rgb(34, 34, 34))
 }
 .h2 {
 margin: auto;
@@ -263,10 +277,10 @@ input[type="Other skill"] {
     background-color: #f7d464;
     color: #333;
     text-align: center;
-    padding: 0;
     width: 100%;
     position: absolute;
     clear:both;
+    display:flex;
     
 }
 
@@ -281,3 +295,48 @@ input[type="Other skill"] {
     width: 100%;
 }
 /* -------------- end of apply --------------*/
+
+
+/*------------------- start of about.html -----------------*/
+
+
+
+/* Timetable Section Styling */
+section#div-timetable-employee {
+    background-color: #ffe2d1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Timetable Styling */
+table.timetable-employee {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.timetable-employee, th, td {
+    border: 1px solid #ddd;
+}
+
+
+th, td   {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #5f7b97;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*------------------- end of about.html -----------------*/
