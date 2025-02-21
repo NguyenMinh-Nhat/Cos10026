@@ -163,9 +163,17 @@ nav ul {
     background-color: rgb(252, 151, 0);
     font-size: 15px;
     border: 2px;
+    transition: all 0.3s ease-in-out;
 }
 
+a.icon_arrow:active {
+    transform: scale(0.5);
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+}
 
+a.icon_arrow:hover {
+    transform: scale(1.1);
+}
 a.enhancement-web {
     position: relative;
     display:block;
@@ -181,6 +189,12 @@ a.enhancement-web {
     font-size: 20px;
     font-weight: bold;
 }
+
+a.enhancement-web:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
 
 /*----- end of index  ---------------*/
 
@@ -227,7 +241,7 @@ form h2 {
     position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(124, 123, 123, 0.1);
-    top: 70%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 
