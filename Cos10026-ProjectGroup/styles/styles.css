@@ -1,11 +1,21 @@
 /* -------- this is index.html menu ------*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255)
+    
+}
 
-footer {
+#footer_index{
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
     border-top: 4px double #3498db;
+    position: static;
+    display:relative;
+    z-index: 1;
 }
 
 header {
@@ -21,17 +31,42 @@ nav {
     text-align: center;
     background-color: #333;
     height: 50px;
+    max-width: 100%;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+nav a:hover {
+    color: #f4a261;
+    transform: scale(1.1);
+
 }
 
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #f4a261;
+    transition: width 0.3s ease, left 0.3s ease;
+}
 ul {
-    list-style-type: none;
-    display:inline-block;
-    padding: 0;
+    list-style: none;
+    padding-top: 0.5%;
+}
+
+ul li {
+    padding: 5px 0;
+    position: relative;
 }
 
 nav ul li {
     display: inline;
-    padding: 15px 30px;
+    margin:0 20px;
 }
 
 nav ul li a {
@@ -39,17 +74,20 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    font-size: large;
+    
 }
 
-main {
-    padding: 20px;
+nav ul {
+    justify-content: center;
+    align-items: center;
+    margin:auto;
 }
-
 
 
 .vngimage {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Maintain aspect ratio */
+    width: auto; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
 }
 
 #logo_text {
@@ -59,9 +97,14 @@ main {
 }
 
 .container {
-    display: flex;
-    align-items: center;
-
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display:flex;
+    text-align: center;
 }
 
 
@@ -73,11 +116,12 @@ main {
 .image_banner {
     max-width: 100%;
     max-height: auto;
-    object-fit: cover;
     display:block;
     width:100%;
     border-radius:none;
-    
+    padding-top:20px;
+    position:static;
+    z-index: 10;
 }
 
 .image_container {
@@ -87,24 +131,68 @@ main {
 
 .text_box {
     position: absolute;
-    top: 40%; /* Điều chỉnh vị trí theo nhu cầu của bạn */
+    top: 35%; 
     left: 20%;
     transform: translate(-50%, -50%);
-    background-color: rgba(226, 215, 215, 0.5); /* Nền bán trong suốt */
+    background-color: rgba(226, 215, 215, 0.5); 
     padding: 50px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
-.text_box a {
+.text_box_1 {
     color: rgb(250, 133, 0);
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
+    padding: 20px;
+    position: relative;
 }
 
 
 .menu_container li {
     font-weight: bold;
+    font-size: 20px;
+}
+
+.icon_arrow {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(252, 151, 0);
+    text-decoration: dashed;
+    color:#fff;
+    background-color: rgb(252, 151, 0);
+    font-size: 15px;
+    border: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+a.icon_arrow:active {
+    transform: scale(0.5);
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+}
+
+a.icon_arrow:hover {
+    transform: scale(1.1);
+}
+a.enhancement-web {
+    position: relative;
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    border-color: rgb(70, 70, 70);
+    padding: 10px;
+    border:2px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(48, 48, 48, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a.enhancement-web:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
 }
 
 
@@ -120,21 +208,8 @@ main {
 
 
 /*-------------apply.html    -------------*/
-form {
-        background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        width: 300px;
-        margin: auto;
-}
-input, select, textarea {
-        width: 100%;
-        padding: 8px;
-        margin: 5px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-}
+
+
 button {
         background-color: rgb(239, 227, 7);
         color: white;
@@ -154,31 +229,32 @@ form h2 {
 }
 
 
-.apply_body {
+.apply_form {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
-    margin: 0;
-    width: 800px;
-    padding: 0;
-    margin-left: 450px;
+    width: 700px;
+    padding: 20px;
+    display: table;
+    margin: auto;
+    top: 250px;
+    color: rgb(rgb(182, 178, 178), rgb(101, 104, 101), rgb(34, 34, 34));
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(124, 123, 123, 0.1);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    clear:both;
 }
 .h2 {
 margin: auto;
 }
-form {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin: auto;
-}
-    input, select, textarea {
-        width: 100%;
-        padding: 8px;
+
+    input, select {
         margin: 5px 0;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        border-radius: 7px;
     }
 button {
     background-color: rgb(239, 227, 7);
@@ -197,4 +273,130 @@ button:hover {
     text-align: center;
 }
 
+.Date.of.birth input[type="date"] {
+    width: 150px;
+    padding: 8px;
+    position:flex;
+    display: inline;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="surburb"], input[type="postcode"],input[type="state"] {
+    width: 500px;
+    padding:10px;
+}   
+
+input[type="Phone number"] {
+    width: 300px;
+    padding: 10px;
+    height: 20px;
+}
+
+select[type="gender"] {
+    width: 150px;
+    padding: 10px;
+}
+
+input[type="Skill list"] {
+    width: 400px;
+    height: auto;
+    padding: 10px;
+}
+
+#usermessage-label {
+    text-align: center;
+    margin: auto;
+    max-height: fit-content;
+    
+}
+
+textarea#UserMessage {
+    padding-top: 20px;
+    border-radius: 10px;
+}
+.Message-div {
+    padding: 10px;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="Other skill"] {
+    width: 400px;
+    height: 50px;
+}
+
+#dov-div {
+    display:flex;
+    position: relative;
+
+}
+
+.vngbg {
+    background-color: #f7d464;
+    color: #333;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: static;
+    clear:both;
+    display:flex;
+    justify-content: center;
+    
+}
+
+#footer_apply{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    clear: both;
+    width: 100%;
+    display:block;
+}
 /* -------------- end of apply --------------*/
+
+
+/*------------------- start of about.html -----------------*/
+
+
+
+/* Timetable Section Styling */
+section#div-timetable-employee {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+/* Timetable Styling */
+table.timetable-employee {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table.timetable-employee, th, td {
+    border: 1px solid #ddd;
+}
+
+
+th, td   {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #5f7b97;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/*------------------- end of about.html -----------------*/
