@@ -14,7 +14,6 @@ body {
     padding: 20px;
     border-top: 4px double #3498db;
     position: static;
-    display:relative;
     z-index: 1;
 }
 
@@ -86,14 +85,14 @@ nav ul {
 
 
 .vngimage {
-    width: auto; /* Adjust the width as needed */
+    width: 100px; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 
 #logo_text {
     text-align: center;
     margin: auto;
-    width: 100;
+    width: 100%;
 }
 
 .container {
@@ -115,10 +114,8 @@ nav ul {
 
 .image_banner {
     max-width: 100%;
-    max-height: auto;
     display:block;
     width:100%;
-    border-radius:none;
     padding-top:20px;
     position:static;
     z-index: 10;
@@ -236,15 +233,13 @@ form h2 {
     padding: 20px;
     display: table;
     margin: auto;
-    top: 250px;
-    color: rgb(rgb(182, 178, 178), rgb(101, 104, 101), rgb(34, 34, 34));
+    color: rgb(70, 70, 70);
     position: absolute;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(124, 123, 123, 0.1);
-    top: 100%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-
     clear:both;
 }
 .h2 {
@@ -276,7 +271,6 @@ button:hover {
 .Date.of.birth input[type="date"] {
     width: 150px;
     padding: 8px;
-    position:flex;
     display: inline;
 }
 

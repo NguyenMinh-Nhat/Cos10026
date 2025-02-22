@@ -37,7 +37,7 @@ body {
     }
     .navbar ul {
         flex-direction: column;
-        display: none; /* Ẩn menu mặc định trên mobile */
+        display: none; /* Menu is turn off in mobile */
     }
     .menu-button {
         display: block;
