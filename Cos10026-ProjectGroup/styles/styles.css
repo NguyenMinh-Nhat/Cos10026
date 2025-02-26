@@ -85,14 +85,19 @@ nav ul {
 
 
 .vngimage {
-    width: 100px; /* Adjust the width as needed */
+    width: 5em; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    right: 0;
 }
 
 #logo_text {
     text-align: center;
     margin: auto;
     width: 100%;
+    display:flex;
+    justify-content: center;
+    position:relative;
 }
 
 .container {
@@ -229,18 +234,19 @@ form h2 {
 .apply_form {
     font-family: Arial, sans-serif;
     background-color: #fefdfd;
-    width: 700px;
+    width: 700px auto;
     padding: 20px;
     display: table;
     margin: auto;
     color: rgb(70, 70, 70);
-    position: absolute;
+    position: relative;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(124, 123, 123, 0.1);
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     clear:both;
+    position:absolute;
 }
 .h2 {
 margin: auto;
@@ -336,7 +342,8 @@ input[type="Other skill"] {
     clear:both;
     display:flex;
     justify-content: center;
-    
+    position: absolute;
+    height: 100%;
 }
 
 #footer_apply{
@@ -346,7 +353,7 @@ input[type="Other skill"] {
     padding: 10px;
     position: relative;
     clear: both;
-    width: 100%;
+    width: 98%;
     display:block;
 }
 /* -------------- end of apply --------------*/
@@ -393,4 +400,30 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+/* Create a relative container for the background image and the form */
+.form-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+}
+
+/* Ensure the background image stays behind the form */
+.vngbg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Center the form over the image */
+.apply_form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* Optional: adjust width, padding, etc. as needed */
+}
 /*------------------- end of about.html -----------------*/

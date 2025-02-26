@@ -28,7 +28,6 @@ body {
 .navbar ul li a:hover {
     color: #ffcc00;
 }
-
 /* ========== Mobile (max-width: 768px) ========== */
 @media (max-width: 768px) {
     .container {
